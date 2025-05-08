@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -12,9 +13,9 @@ export default function Home() {
       <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
         <h1 className="text-6xl font-bold">
           Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
+          <Link className="text-blue-600" href="https://nextjs.org">
             Next.js with TailwindCss!
-          </a>
+          </Link>
         </h1>
 
         <p className="mt-3 text-2xl">
@@ -25,7 +26,7 @@ export default function Home() {
         </p>
 
         <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
-          <a
+          <Link
             href="https://nextjs.org/docs"
             className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
           >
@@ -33,9 +34,9 @@ export default function Home() {
             <p className="mt-4 text-xl">
               Find in-depth information about Next.js features and API.
             </p>
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="https://nextjs.org/learn"
             className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
           >
@@ -43,9 +44,9 @@ export default function Home() {
             <p className="mt-4 text-xl">
               Learn about Next.js in an interactive course with quizzes!
             </p>
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="https://github.com/vercel/next.js/tree/master/examples"
             className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
           >
@@ -53,9 +54,9 @@ export default function Home() {
             <p className="mt-4 text-xl">
               Discover and deploy boilerplate example Next.js projects.
             </p>
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
           >
@@ -63,12 +64,12 @@ export default function Home() {
             <p className="mt-4 text-xl">
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
-          </a>
+          </Link>
         </div>
       </main>
 
       <footer className="flex h-24 w-full items-center justify-center border-t">
-        <a
+        <Link
           className="flex items-center justify-center"
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
@@ -82,7 +83,7 @@ export default function Home() {
             width="64"
             height="64"
           />
-        </a>
+        </Link>
       </footer>
     </div>
   )
