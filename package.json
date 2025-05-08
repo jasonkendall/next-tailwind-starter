@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": ">=14.0.0",
+    "node": ">=22.11.0",
     "yarn": ">=1.22.18",
     "npm": "please-use-yarn"
   },
   "scripts": {
-    "dev": "cross-env NODE_OPTIONS='--inspect' next",
+    "dev": "cross-env NODE_OPTIONS='--inspect' next --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
